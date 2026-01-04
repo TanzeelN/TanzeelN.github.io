@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <HashRouter>
+      <HashRouter basename='/TanzeelN.github.io'>
         <HeaderBar/>
         <Routes>
           <Route path="/" element={<Home/>}/>
