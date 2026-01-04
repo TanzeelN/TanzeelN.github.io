@@ -1,0 +1,42 @@
+/* Setting full view point to be used */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+body{
+    background-color: #050b1a;;
+}
+
+/* Making the Header Bar fixed even if you scroll down */
+.header-bar{
+    background-color: #050b1a;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 5vh;
+}
+
+
+.header-bar .nav-link {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Navbar is fixed currently, so setting padding to be the size of the navbar */
+.page-section{
+  padding-top: 5vh;
+  width: 100%;
+  }
+
+.home-page {
+  width: 100vw;
+  height: 95vh;
+  color: #ffffff;
+}
+.home-page .col{
+  padding-top: 10vh;
+  font-weight: bold;
+  font-size: 35px;
+}
