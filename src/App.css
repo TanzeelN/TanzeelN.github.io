@@ -5,7 +5,7 @@ html, body, #root {
 }
 
 body{
-    background-color: #050b1a;;
+    background-color: #0b1a33de;
 }
 
 /* Making the Header Bar fixed even if you scroll down */
@@ -30,13 +30,29 @@ body{
   width: 100%;
   }
 
-.home-page {
-  width: 100vw;
-  height: 95vh;
+
+/* Home Page Formatting */
+.home-page-title{
+  text-align: center;
   color: #ffffff;
+  font-weight: "bold";
 }
-.home-page .col{
-  padding-top: 10vh;
-  font-weight: bold;
-  font-size: 35px;
+
+.home-page-details{
+  align-items: center;
+  margin-top: 125px;
+}
+
+/* First column with information formatting */
+.details-box {
+  display: inline-block;
+  padding: 10px 10px;
+  color: #ffffff;
+
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+}
+
+.home-text-custom{
+  color: bisque;
 }

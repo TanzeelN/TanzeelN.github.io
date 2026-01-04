@@ -8,7 +8,8 @@ export default function ScrambledText({ Text }: ScrambledTextProps) {
   const { ref } = useScramble({
   text: Text,
   chance: 1,
-  scramble: 5,
+  scramble: 20,
+  speed: 0.5
 });
 
 return <span ref={ref} />;
