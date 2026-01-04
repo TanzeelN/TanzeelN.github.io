@@ -1,67 +1,62 @@
 import { Button, Container, Image } from "react-bootstrap";
-import { Row, Col } from "react-bootstrap";
 import ScrambledText from "../components/ScrambleText";
 import profileImg from "../assets/Cat-Profile-Pic.webp";
 
 export default function Home() {
   return (
     <Container fluid className="page-section">
-      <Row className="home-page-title">
-        <Col>
-          <div style={{ fontSize: 40 }}>Hi, I'm Tanzeel Naz</div>
-
-          <div
-            style={{
-              fontSize: 25,
-              marginTop: "-12px",
-              color: "#d1d5db39",
-            }}
-          >
+      <div className="homeV">
+        <header className="homeV__header">
+          <h1 className="homeV__name">Hi, I'm Tanzeel Naz</h1>
+          <div className="homeV__title">
             <ScrambledText Text="Finance Data Analyst" />
           </div>
-        </Col>
-      </Row>
+        </header>
 
-      <Row className="home-page-details">
-        <Col>
-          <div className="details-box">
-            <div>
-              Currently, I'm working at an insurance company building & managing
-              forecasting models, <br />
-              automating processes & creating applications for company-wide use
-              by leveraging R, SQL & VBA. <br />
-              In my free time, I enjoy completing machine learning projects with
-              python & creating dashboards to visualise datasets. <br />
-              Outside of coding, I do a lot of hiking, compete in squash &
-              currently learning how to draw.
-            </div>
-          </div>
-          <div className="mt-5 text-white mb-5 ps-2">
-            Feel free to click the boxes below to view my professional journey
-            or some pet projects I've been working on.
-          </div>
-          <Row>
-            <Col className="text-center">
-              <Button className="me-5">My Journey</Button>
-              <Button>Pet Projects</Button>
-            </Col>
-          </Row>
-        </Col>
-        <Col
-          className="text-center"
-          style={{
-            marginBottom: "50px",
-          }}
-        >
+        <div className="homeV__imageWrap">
           <Image
             src={profileImg}
             alt="Profile"
-            fluid
             roundedCircle
-            style={{ maxWidth: "350px" }}
+            className="homeV__avatar"
           />
-        </Col>
-      </Row>
+        </div>
+
+        <section className="homeV__card">
+  <ul className="homeV__bullets">
+    <li>
+      <strong>Professional:</strong> Building & managing forecasting models at an
+      insurance company,
+      <br />
+      automating workflows and internal applications using R, SQL & VBA.
+    </li>
+
+    <li>
+      <strong>Free Time:</strong> Machine learning projects in{" "}
+      <span className="tech">Python</span> and interactive{" "}
+      <span className="tech">dashboards</span> to explore datasets.
+    </li>
+
+    <li>
+      <strong>Outside of coding</strong>: hiking, competitive squash, and learning to draw.
+    </li>
+  </ul>
+</section>
+
+
+        <p className="homeV__hint">
+          Click below to explore my professional journey or pet projects.
+        </p>
+
+        <div className="homeV__actions">
+          <Button variant="outline-light" className="homeV__btn">
+            My Journey
+          </Button>
+          <Button variant="light" className="homeV__btn">
+            Pet Projects
+          </Button>
+        </div>
+      </div>
     </Container>
   );
 }
