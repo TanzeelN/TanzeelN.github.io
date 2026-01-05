@@ -119,3 +119,116 @@ body {
     height: 220px;
   }
 }
+
+/* ================================
+   Project Tiles
+================================ */
+
+.project-card {
+  margin-top: 10vh;
+  border-radius: 18px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(6px);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* ================================
+   Image
+================================ */
+
+.project-card__imgWrap {
+  height: 190px;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.04),
+    rgba(0, 0, 0, 0.02)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  overflow: hidden;
+}
+
+.project-card__img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  padding: 16px;
+}
+
+/* ================================
+   Title
+================================ */
+
+.project-card .card-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+/* ================================
+   Tech badges
+================================ */
+
+.project-card .badge {
+  padding: 0.4em 0.65em;
+  font-size: 0.72rem;
+  font-weight: 500;
+  border-radius: 999px;
+}
+
+/* ================================
+   Bullet points
+================================ */
+
+.project-card ul {
+  font-size: 0.9rem;
+  padding-left: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.project-card ul li {
+  margin-bottom: 0.4rem;
+}
+
+/* ================================
+   More details button
+================================ */
+
+.project-card .btn {
+  border-radius: 12px;
+  font-weight: 600;
+  padding: 0.6rem 0;
+}
+
+.project-card .btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+/* ================================
+   Dark mode support (optional)
+================================ */
+
+@media (prefers-color-scheme: dark) {
+  .project-card {
+    background: rgba(25, 25, 25, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .project-card .card-title,
+  .project-card ul {
+    color: #f1f1f1;
+  }
+}
+

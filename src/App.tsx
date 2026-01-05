@@ -1,7 +1,8 @@
-import { HashRouter, Routes, Route } from "react-router";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/HomePage";
 import HeaderBar from "./components/HeaderBar";
 import PointerBeam from "./components/PointerBeam";
+import Projects from "./pages/Projects";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <HeaderBar />
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
           </Routes>
         </HashRouter>
       </div>
