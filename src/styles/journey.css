@@ -154,3 +154,24 @@
     transform: translateY(-50%);
   }
 }
+
+@media (max-width: 768px) {
+  .journey {
+    padding-left: 0;
+  }
+
+  /* Hide the vertical line */
+  .journey::before {
+    display: none;
+  }
+
+  .journey-item {
+    padding-left: 0;
+  }
+
+  /* Hide dots */
+  .journey-line {
+    display: none;
+  }
+}
+
